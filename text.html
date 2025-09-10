@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+    <head> 
+        <meta charset = "UTF-8">
         <meta name="viewport" 
         content="width=device-width, initial-scale=1.0">
-        <title>Practice for simple course</title>
+        <title>Learning text html</title>
     </head>
     <body>
-        <a class="Amazon"
+         <a class="Amazon"
         href="https://www.amazon.com/">Back to Amazon</a>
-        <h1>Nike Black Running Shoes</h1>
+        <h1 class="Title">Nike Black Running Shoes</h1>
         <p class="Price"><strong>$39 - in stock.</strong></p>
-        <h3>Free delivery tomorrow.</h3>
+        <h3 class="Delivery">Free delivery tomorrow.</h3>
         <button class="Add-to-cart-button">
         Add to Cart</button>
         <button class="Buy-now-button">Buy now</button>
         <button class="Broke-button">I'm broke</button>
+        <p class="Facts"> I know you're broke, so <span 
+        class="strong">fuck off</span>.</p>
         <style>
+            .Delivery {
+                font-size: 20px;
+                font-family: Arial;
+                text-align: center;
+            }
+            .Title {
+                font-size: 30px;
+                font-family: sans-serif;
+                text-align: center;
+                font-weight: bold;
+            }
             .Amazon {
                 color: rgb(0, 113, 133);
                 font-size: 20px;
+                font-family: Arial;
+                display: flex;
+                justify-content: center;
             }
             .Price {
                 color: rgb(0, 118, 0);
                 font-size: 20px;
                 font-weight: bold;
+                font-style: italic;
+                display: flex;
+                justify-content: center;
             }
             .Add-to-cart-button {
                 background-color: rgb(225, 164, 20);
@@ -35,6 +54,11 @@
                 font-weight: bold;
                 cursor: pointer;
                 transition: opacity 0.7s;
+                display: block; 
+                /*makes the button a block element*/
+                margin: auto;
+                /*centers the button horizontally*/  
+                margin-bottom: 10px;
             }
             .Buy-now-button {
                 background-color: rgb(255, 164, 28);
@@ -43,10 +67,12 @@
                 border-radius: 50px;
                 border: none;
                 font-weight: bold;
-                margin-left: 10px;
                 cursor: pointer;
                 transition: background-color 0.5s, 
                 color 0.5s;
+                display: block;
+                margin: auto;   
+                margin-bottom: 10px;        
             }
             .Broke-button {
                 background-color: rgb(190, 95, 111);
@@ -55,9 +81,11 @@
                 border-radius: 50px;
                 border: none;
                 font-weight: bold;
-                margin-left: 10px;
+                margin-top: 10px;
                 cursor: pointer;
-                transition: box-shadow 0.4s;               
+                transition: box-shadow 0.4s;       
+                display: block;
+                margin: auto;                       
             }
             .Add-to-cart-button:hover {
                 opacity: 0.7; /* fades the button */                
@@ -77,6 +105,25 @@
                 /*horizontal, vertical, blur*/
                 rgba(0, 0, 0, 0.3);/* a = opacity */
             }
+            .Facts {
+                font-size: 14px;
+                text-align: center;
+                background-color: rgba(85, 100, 189, 0.842);
+                width: 200px;
+                padding-top:10px;
+                padding-right:10px;
+                padding-left: 10px;
+                padding-bottom: 10px;
+                color: white;
+                display: block;
+                margin: auto;
+                margin-top: 50px;
+                cursor: pointer;
+            }
+            .strong {
+                text-decoration: underline;
+                cursor: pointer;
+            }
             /*padding = space inside the border*/
             /*vertical-aliign = adjust text position
             (top or bottom)*/
@@ -86,7 +133,9 @@
                   justify-content: center;(horizontal)
                   align-items: center;(vertical)
                   height: 100vh;(full screen) 
-            } */            
+            } 
+            Go to google and search html entities 
+            for a specific symbol*/                        
         </style>
     </body>
 </html>
